@@ -1,0 +1,8 @@
+com\employeeapi\testcases\TC01_GET_All_Employees.class
+com\employeeapi\testcases\TC02_GET_Single_Employee_Record.class
+com\employeeapi\testcases\TC03_POST_Employee_Record.class
+com\employeeapi\testcases\TC05_DELETE_Employee_Record.class
+com\employeeapi\testcases\TC04_PUT_Employee_Record.class
+com\employeeapi\utilities\RestUtils.class
+com\employeeapi\base\TestBase.class
+com\employeeapi\utilities\Listeners.class
