@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 54.287 sec <<< FAILURE! - in TestSuite
+checkContentLength(com.employeeapi.testcases.TC02_GET_Single_Employee_Record)  Time elapsed: 0.106 sec  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.employeeapi.testcases.TC02_GET_Single_Employee_Record.checkContentLength(TC02_GET_Single_Employee_Record.java:84)
+
+checkStatusCode(com.employeeapi.testcases.TC02_GET_Single_Employee_Record)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.employeeapi.testcases.TC02_GET_Single_Employee_Record.checkStatusCode(TC02_GET_Single_Employee_Record.java:43)
+
+checkStatusLine(com.employeeapi.testcases.TC02_GET_Single_Employee_Record)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 404 Not Found]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testcases.TC02_GET_Single_Employee_Record.checkStatusLine(TC02_GET_Single_Employee_Record.java:65)
+
+checkResponseBody(com.employeeapi.testcases.TC04_PUT_Employee_Record)  Time elapsed: 0.045 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testcases.TC04_PUT_Employee_Record.checkResponseBody(TC04_PUT_Employee_Record.java:58)
+
+checkStatusCode(com.employeeapi.testcases.TC04_PUT_Employee_Record)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.employeeapi.testcases.TC04_PUT_Employee_Record.checkStatusCode(TC04_PUT_Employee_Record.java:69)
+
+checkStatusLine(com.employeeapi.testcases.TC04_PUT_Employee_Record)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 404 Not Found]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.employeeapi.testcases.TC04_PUT_Employee_Record.checkStatusLine(TC04_PUT_Employee_Record.java:78)
+
+checkResponseBody(com.employeeapi.testcases.TC05_DELETE_Employee_Record)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.employeeapi.testcases.TC05_DELETE_Employee_Record.checkResponseBody(TC05_DELETE_Employee_Record.java:46)
+
